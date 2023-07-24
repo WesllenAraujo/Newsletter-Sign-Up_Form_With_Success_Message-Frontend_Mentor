@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <main id="content">
+        <section id="full-card">
+            <section id="left-card">
+                <h1 id="title">Stay updated!</h1>
+                <p id="description">Join 60,000+ produt menagers receiving monthly updates on:</p>
+                <ul id="menu">
+                    <li class="menu-item">Product discovery and building what matters</li>
+                    <li class="menu-item">Meausring to ensure updates are a success</li>
+                    <li class="menu-item">And much more!</li>
+                </ul>
+                    <section id="row">
+                        <label for="email" id="input-text">Email Adress</label>
+                        <span id="error">Valid email required</span>
+                    </section>
+                    <input type="text" id="email" placeholder="email@company.com">
+                    <button class="confirm-button" onclick="validarEmail()">Subscribe to monthly newslatter</button>
+            </section>
+            <section id="right-card">
+                <img src="./src/images/illustration-sign-up-desktop.svg" alt="Economy-image" id="right-card-image">
+            </section>
+        </section>
+        <section id="success-message">
+            <img src="./src/images/icon-success.svg" alt="success-image" id="success-image">
+            <h1 id="success-title">Thanks for subscribing!</h1>
+            <p id="success-description">A confirmation email has been sent to <span id="bold">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription</p>
+            <button class="confirm-button" id="success-button">Dismiss message</button>
+        </section>
+    </main>
+</body>
+<script src="./src/js/script.js"></script>
+</html>
